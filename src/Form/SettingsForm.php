@@ -9,7 +9,7 @@ use Drupal\user\Entity\Role;
 use Drupal\contextual\Element\ContextualLinks;
 
 /**
- * Configure example settings for this site.
+ * Configure settings for this module.
  */
 class SettingsForm extends ConfigFormBase {
 
