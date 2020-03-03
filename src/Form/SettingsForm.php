@@ -77,7 +77,7 @@ class SettingsForm extends ConfigFormBase {
     foreach ($links as $key => $link) {
       $form['contextual_links'][$key] = [
         '#type' => 'fieldset',
-        '#title' => $link['title'],
+        '#title' => '"' . $link['title'] . '"',
       ];
       $type_settings = isset($links_settings[$key]) ? $links_settings[$key] : ['dialog_type' => 'default'];
 
