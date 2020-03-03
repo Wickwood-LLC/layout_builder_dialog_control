@@ -66,9 +66,11 @@ class SettingsForm extends ConfigFormBase {
     }
 
     $form['contextual_links'] = [
-      '#type' => 'container',
-      '#title' => $this->t('Load hidden for roles'),
+      '#type' => 'details',
+      '#title' => $this->t('Layout builder blocks contextual link menu items'),
+      '#open' => TRUE,
       '#tree' => TRUE,
+      '#description' => $this->t('Contextual menu link items of layout builder blocks are listed below. You may configure them so its dialog will be opened as overlay or off-screen.')
     ];
 
     $links_settings = $config->get('layout_builder_contextual_links');
@@ -85,6 +87,7 @@ class SettingsForm extends ConfigFormBase {
       ];
       $form['contextual_links'][$key]['dialog_type'] = [
         '#type' => 'select',
+        '#title' => $this->t('Dialog type'),
         '#options' => [
           'default' => $this->t('Default'),
           'overlay' => $this->t('Overlay'),
