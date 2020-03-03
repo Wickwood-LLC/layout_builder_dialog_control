@@ -25,27 +25,9 @@ function layout_builder_dialog_control_contextual_links_view_alter(&$element, $i
                 ]);
                 break;
             }
-            
-            //$options['attributes']['data-dialog-renderer'] = 'off_canvas';
-            //unset($options['attributes']['data-dialog-options']);
-            // unset($options['attributes']['data-dialog-renderer']);
-            // $options['attributes']['data-dialog-options'] = json_encode([
-            //   'width' => 800,
-            // ]);
             $link['url']->setOptions($options);
           }
         }
-        // $options = $link['url']->getOptions();
-        // //$options['attributes']['data-dialog-renderer'] = 'off_canvas';
-        // //unset($options['attributes']['data-dialog-options']);
-        // unset($options['attributes']['data-dialog-renderer']);
-        // $options['attributes']['data-dialog-options'] = json_encode([
-        //   'width' => 800,
-        // ]);
-        // $link['url']->setOptions($options);
       }
     }
-    // Add another class to all contextual link lists to facilitate custom
-    // styling.
-    //$element['#attributes']['class'][] = 'custom-class';
   }
